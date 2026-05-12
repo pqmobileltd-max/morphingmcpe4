@@ -18,11 +18,17 @@ import MBProgressHUD
     let Rewarded_Ads = "ca-app-pub-3940256099942544/1712485313"
     let Native_Ads = "ca-app-pub-3940256099942544/3986624511"
 #else
-    let Interstitial_Ads  = "ca-app-pub-9905481665860575/1474771104"
-    let Banner_Ads  = "ca-app-pub-9905481665860575/6973938973"
-    let Open_App_Ads  = "ca-app-pub-9905481665860575/5221873605"
-    let Rewarded_Ads = "ca-app-pub-9905481665860575/5130945080"
-    let Native_Ads = "ca-app-pub-9905481665860575/7845660025"
+//    let Interstitial_Ads  = "ca-app-pub-9905481665860575/1474771104"
+//    let Banner_Ads  = "ca-app-pub-9905481665860575/6973938973"
+//    let Open_App_Ads  = "ca-app-pub-9905481665860575/5221873605"
+//    let Rewarded_Ads = "ca-app-pub-9905481665860575/5130945080"
+//    let Native_Ads = "ca-app-pub-9905481665860575/7845660025"
+
+let Interstitial_Ads  = "ca-app-pub-9436192374733168/3726873232"
+let Banner_Ads  = "ca-app-pub-9436192374733168/7094454363"
+let Open_App_Ads  = "ca-app-pub-9436192374733168/4860665588"
+let Rewarded_Ads = "ca-app-pub-9436192374733168/8495165944"
+let Native_Ads = "ca-app-pub-9436192374733168/6064650161"
 #endif
 
 
