@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>skinpreview3d.js example using pure javascript</title>
+</head>
+<style>
+    
+.center {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+
+</style>
+<body>
+    <canvas class="center" id="skin_container"></canvas>
+    <script src="./skinview3d.bundle.js"></script>
+<script>
+    
+    var skinViewer = new skinview3d.SkinViewer()
+    
+    let primaryAnimation;
+    
+    let type = "cape"
+    
+    //let WalkingAnimation = skinview3d.WalkingAnimation;
+    //let RunningAnimation = skinview3d.RunningAnimation;
+    //let FlyingAnimation = skinview3d.FlyingAnimation;
+    
+    
+    var skin = new Image();
+    skin.crossOrigin = '';
+    
+    var cape = new Image();
+    cape.crossOrigin = '';
+    
+    
+    skin.onload = function() {
+        console.log("Loaded Image");
+    }
+
+    function loadSkin(path){
+        skin.src = path;
+        skinViewer.loadSkin(path)
+    }
+
+    function loadCape(path){
+        cape.src = path;
+        skinViewer.loadCape(path,{ backEquipment: type })
+    }
+
+    function run(){
+ 
+        primaryAnimation.resetAndRemove();
+        
+        // And run for now!
+        let run = skinViewer.animations.add(skinview3d.RunningAnimation);
+
+        // Set the speed of an animation
+        run.speed = 0.3;
+        // Pause single animation
+        run.paused = false;
+        // Pause all animations!
+        skinViewer.animations.paused = false;
+        
+        primaryAnimation = run
+    }
+
+    function fly(){
+        
+        primaryAnimation.resetAndRemove();
+        
+        let fly = skinViewer.animations.add(skinview3d.FlyingAnimation);
+        fly.paused = false;
+        skinViewer.animations.paused = false;
+        
+        primaryAnimation = fly
+    }
+
+    function reloadCape(){
+        skinViewer.loadCape(null);
+        type = "cape"
+        skinViewer.loadCape(cape.src,{ backEquipment: type })
+    }
+
+    function reloadElytra(){
+        skinViewer.loadCape(null);
+        type = "elytra"
+        skinViewer.loadCape(cape.src,{ backEquipment: type })
+    }
+    
+    function rotate(){
+        let rotate = skinViewer.animations.add(skinview3d.RotatingAnimation);
+    }
+    
+    function initializeViewer() {
+        
+    let viewerCanvas = document.getElementById("skin_container");
+    viewerCanvas.width = 600;
+    viewerCanvas.height = 600;
+        
+    skinViewer = new skinview3d.SkinViewer({
+        canvas: viewerCanvas,
+        skin: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAABJlBMVEVMaXEAf38AqKgAmZmqfWaWX0EAaGhGOqUwKHIAr691Ry8qHQ1qQDA/Pz9ra2smIVuHVTuWb1sAYGBWScwoKCgmGgovHw8AzMw6MYkkGAgoGwoAW1sjIyMAnp5RMSWGUzQsHg4pHAyBUzkrHg0fEAsoGg0mGAstHQ6aY0QnGwstIBB3QjWcZ0gzJBEyIxBiQy8rHg6dak8mGgwsHhGKWTsoGwsjFwmEUjF0SC+iakd6TjOHWDokGAqDVTucY0WIWjk6KBQoHAsvIhGcaUz///+0hG27iXJSPYlSKCaaZEqfaEmPXj4vIA2AUzQ0JRJvRSxtQyqQXkOsdlo/KhWcY0aWX0Cze2K+iGytgG1CKhK1e2e9jnK9i3K2iWycclzGloC9jnS3gnKSJOIgAAAAAXRSTlMAQObYZgAAAvxJREFUWMPtlmebojAQx5cEkAiecHcgwrGArPW2997b9d779/8SN0nMruK6oL71//iYocyPmTA6MzPTla5X4VOdK3Y1M6r0quMAoFo0QiMMxwE4js0BT0DG6ICqQ3Nw9LEB4GvbziQA5i8A12MAbCe25yiAaQxAbIN0feTX6Hl2O17sdF4mzknVTvROZzFu254n6iIPwI7iZCFJkoVvH6KThSSObAro1kUmIGrY8fLGfpz8+vHn59/3r+P9jeXYbkSiLrIjqDcjrx2dyhfy19+XZ2enUduLmnVP1EWOFLzVzb3D44vzq++XV+fy8eHe5iqcFHWRA1BvrG0pRx8//zOMLzuvjpSttUadbiKvi+w98JpLK62w+O7TU9CLWjFsrSw1vUjURSYgDFvhvLK+/eZtrbZ7cLC7vf58/tl8C36QtC6KYa5aeAR6DBLHFV5LlYddifOoUkHGrDGbDeDlPACogCYFIPA3JkphAKBpZa0AgoWuriRJPg5qO7VaEIAtBQghQhDiNmErAd0Cyn2AgqSqEkIB+BMCtoro3QAAUyKIBPR6CqD1AdiNBAUYPMFWCRdiYMKg9wN8VfXheoDhi9uYIMwBENQ9EYDhglTf9zGmbhiD6TNvOFYUxZRBJhh07Qe4boHuBQWAj4r5QzHAVMIOEAdYsqyYdwF694ACIADEALAH1BsgJgdYDGBZPQBNG3gLAiCxTbwB0CdTgNkfgQBotwDCvAgWG0YFfhygpAClkgCUSg9AkipJGNMAOABstg0KB8gKjQRS6QFwR7FCKmUKLLgAoEXmughjt8ABlswiyQCwiICARXlj+KJPBj/LTEcw1VRTTTXKvICGdeXcAwdoIgAaNliMkkJuQO+84NI+AYL/+GBgLsgGlG8aTQBNQuq2+vwArdzbqdBAWx8FcOdcMBSQmheGzgXDAWU+L9wAREvLC0ilQAEWB5h9c0E2gKdiMgDrymbOCLQUQOEAMycgPS8o3dzpaENTyQHob/fsydYkAMjdsthocyfgP7DZYc3t4J05AAAAAElFTkSuQmCC"});
+    
+    
+
+    // Change viewer size
+    skinViewer.width = window.innerWidth;
+    //let w = document.body.clientWidth;
+    skinViewer.height = window.innerHeight;
+
+    // Control objects with your mouse!
+    let control = skinview3d.createOrbitControls(skinViewer);
+    control.enableRotate = true;
+    control.enableZoom = true;
+    control.enablePan = true;
+    
+
+    let run = skinViewer.animations.add(skinview3d.RunningAnimation);
+    // Set the speed of an animation
+    run.speed = 0.3;
+    // Pause single animation
+    run.paused = false;
+    // Pause all animations!
+    skinViewer.animations.paused = false;
+    
+    primaryAnimation = run
+    
+    //skinViewer.playerObject.rotation.y = Math.PI * (0.15);
+    
+    }
+
+    initializeViewer();
+</script>
+
+</body>
+</html>

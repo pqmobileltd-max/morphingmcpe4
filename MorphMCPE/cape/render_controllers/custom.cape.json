@@ -1,0 +1,36 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.cape": {
+      "geometry": "geometry.cape",
+      "materials": [ { "*": "Material.cape" } ],
+      "textures": [ "Texture.custom" ],
+    "is_hurt_color": {
+        "r": "0.0",
+        "g": "0.0",
+        "b": "0.0",
+        "a": "0.0"
+    },
+      "part_visibility": [
+        { "*": "query.armor_texture_slot(1) != 5" }
+      ]
+    },
+    "controller.render.player.cape": {
+      "rebuild_animation_matrices": true,
+      "geometry": "Geometry.cape",
+      "materials": [ { "*": "Material.cape" } ],
+      "textures": [ "Texture.cape" ],
+      "part_visibility": [
+        { "*": "(query.armor_texture_slot(1) != 5) && (!variable.is_first_person || variable.is_paperdoll) && (!variable.map_face_icon)" }
+      ]
+    },
+    "controller.render.custom.elytra": {
+      "geometry": "Geometry.custom.elytra",
+      "materials": [ { "*": "variable.is_enchanted ? Material.enchanted : Material.default" } ],
+      "textures": [ "Texture.custom", "Texture.enchanted" ],
+      "part_visibility": [
+        { "*": "query.armor_texture_slot(1) == 5" }
+      ]
+    }
+  }
+}

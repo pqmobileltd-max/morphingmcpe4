@@ -1,0 +1,6 @@
+framework module Pods_MorphMCPE {
+  umbrella header "Pods-MorphMCPE-umbrella.h"
+
+  export *
+  module * { export * }
+}

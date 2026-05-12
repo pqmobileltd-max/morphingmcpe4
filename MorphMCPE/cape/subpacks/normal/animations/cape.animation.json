@@ -1,0 +1,22 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.render": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": ["variable.render = 1.0;", 0, 0]
+				}
+			}
+		},
+		"animation.player.cape": {
+			"loop": true,
+			"bones": {
+				"cape": {
+					"rotation": ["math.clamp(-31.0 * (query.cape_flap_amount * math.sin(60) * 4.4) - math.sin(query.modified_distance_moved * 55.0) * 3.1 - 5.0, -180.0, -7.0)", 0, "query.modified_move_speed * math.sin(-(query.body_y_rotation - query.head_y_rotation(0))) * 36.5"],
+					"position": [0, "query.get_root_locator_offset('armor_offset.default_neck', 1)", 0]
+				}
+			}
+		}
+	}
+}

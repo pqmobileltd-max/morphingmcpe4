@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HowToUseCapeVC" customModule="MorphMCPE" customModuleProvider="target">
+            <connections>
+                <outlet property="heightConstraint" destination="cmt-b2-vhb" id="z63-cx-4Rr"/>
+                <outlet property="lastStepImg" destination="Blg-vo-a0X" id="EeZ-7U-St6"/>
+                <outlet property="view" destination="J15-XM-FfM" id="TtU-4d-nir"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="J15-XM-FfM">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zK9-fH-3gj">
+                    <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Cb-Q1-1gm">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
+                            <subviews>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="Step 1 : Import the cape you want to Minecraft" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gjb-bZ-52p">
+                                    <rect key="frame" x="20" y="20" width="374" height="37.5"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="textColor" red="0.1844535172" green="0.19194033739999999" blue="0.2039235532" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    <variation key="widthClass=compact">
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                    </variation>
+                                </textView>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="Step 2 : Open Minecraft game and following the below steps" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Jp-dS-BGN">
+                                    <rect key="frame" x="20" y="77.5" width="374" height="37.5"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="textColor" red="0.1844535172" green="0.19194033739999999" blue="0.2039235532" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    <variation key="widthClass=compact">
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                    </variation>
+                                </textView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="capeStep1" translatesAutoresizingMaskIntoConstraints="NO" id="8AY-ub-O3m">
+                                    <rect key="frame" x="20" y="135" width="374" height="210"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" priority="750" constant="500" id="ZgX-6x-80b"/>
+                                        <constraint firstAttribute="width" secondItem="8AY-ub-O3m" secondAttribute="height" multiplier="500:281" id="qqh-Sg-DIm"/>
+                                    </constraints>
+                                </imageView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="capeStep2" translatesAutoresizingMaskIntoConstraints="NO" id="xGR-Ly-czV">
+                                    <rect key="frame" x="20" y="365" width="374" height="210.5"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" priority="750" constant="500" id="Zc4-ki-E1o"/>
+                                    </constraints>
+                                </imageView>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d57-T1-fyn">
+                                    <rect key="frame" x="20" y="595.5" width="374" height="102"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <string key="text">When you enter a world, If the cape does not show, press on the three dots to open the inventory then close it. The cape will appear.</string>
+                                    <color key="textColor" red="0.1844535172" green="0.19194033739999999" blue="0.2039235532" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    <variation key="widthClass=compact">
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                    </variation>
+                                </textView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="capeStep3" translatesAutoresizingMaskIntoConstraints="NO" id="uhY-pX-b48">
+                                    <rect key="frame" x="20" y="717.5" width="374" height="210"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" priority="750" constant="500" id="xz9-dt-f3c"/>
+                                    </constraints>
+                                </imageView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="capeStep4" translatesAutoresizingMaskIntoConstraints="NO" id="Blg-vo-a0X">
+                                    <rect key="frame" x="20" y="1058" width="374" height="210.5"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" priority="750" constant="500" id="Wiv-ZO-PjD"/>
+                                    </constraints>
+                                </imageView>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="Note : You can switch between &quot;normal cape&quot; and &quot;realistic cape&quot; by pressing gear button." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tX4-DO-DEV">
+                                    <rect key="frame" x="20" y="957.5" width="374" height="80.5"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="textColor" red="0.1844535172" green="0.19194033739999999" blue="0.2039235532" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    <variation key="widthClass=compact">
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                    </variation>
+                                </textView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="tX4-DO-DEV" firstAttribute="top" secondItem="uhY-pX-b48" secondAttribute="bottom" constant="30" id="0eR-0B-xK5"/>
+                                <constraint firstAttribute="trailing" secondItem="gjb-bZ-52p" secondAttribute="trailing" constant="20" id="18X-Zq-2vO"/>
+                                <constraint firstItem="8AY-ub-O3m" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="4Cb-Q1-1gm" secondAttribute="leading" constant="20" id="2B2-3n-DGx"/>
+                                <constraint firstItem="uhY-pX-b48" firstAttribute="leading" secondItem="xGR-Ly-czV" secondAttribute="leading" id="36u-JE-5MX"/>
+                                <constraint firstItem="xGR-Ly-czV" firstAttribute="leading" secondItem="8AY-ub-O3m" secondAttribute="leading" id="5Tu-32-L88"/>
+                                <constraint firstAttribute="trailing" secondItem="tX4-DO-DEV" secondAttribute="trailing" constant="20" id="BAx-eR-aCU"/>
+                                <constraint firstItem="8AY-ub-O3m" firstAttribute="centerX" secondItem="4Cb-Q1-1gm" secondAttribute="centerX" id="Cxd-kc-cd9"/>
+                                <constraint firstItem="6Jp-dS-BGN" firstAttribute="leading" secondItem="4Cb-Q1-1gm" secondAttribute="leading" constant="20" id="EmG-SQ-yfS"/>
+                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="8AY-ub-O3m" secondAttribute="trailing" constant="20" id="GoC-bl-xcN"/>
+                                <constraint firstAttribute="trailing" secondItem="d57-T1-fyn" secondAttribute="trailing" constant="20" id="Iez-Am-aJs"/>
+                                <constraint firstAttribute="trailing" secondItem="6Jp-dS-BGN" secondAttribute="trailing" constant="20" id="Kmw-CR-xJl"/>
+                                <constraint firstItem="d57-T1-fyn" firstAttribute="leading" secondItem="4Cb-Q1-1gm" secondAttribute="leading" constant="20" id="LVv-71-5xO"/>
+                                <constraint firstItem="uhY-pX-b48" firstAttribute="width" secondItem="uhY-pX-b48" secondAttribute="height" multiplier="500:281" id="NlG-5C-eXi"/>
+                                <constraint firstItem="gjb-bZ-52p" firstAttribute="leading" secondItem="4Cb-Q1-1gm" secondAttribute="leading" constant="20" id="P2X-GZ-26x"/>
+                                <constraint firstItem="d57-T1-fyn" firstAttribute="top" secondItem="xGR-Ly-czV" secondAttribute="bottom" constant="20" id="RBK-vu-nLo"/>
+                                <constraint firstItem="6Jp-dS-BGN" firstAttribute="top" secondItem="gjb-bZ-52p" secondAttribute="bottom" constant="20" id="V5M-5T-LB9"/>
+                                <constraint firstItem="8AY-ub-O3m" firstAttribute="top" secondItem="6Jp-dS-BGN" secondAttribute="bottom" constant="20" id="W3Y-of-g7K"/>
+                                <constraint firstItem="Blg-vo-a0X" firstAttribute="width" secondItem="Blg-vo-a0X" secondAttribute="height" multiplier="500:281" id="ZDk-v0-sta"/>
+                                <constraint firstItem="xGR-Ly-czV" firstAttribute="top" secondItem="8AY-ub-O3m" secondAttribute="bottom" constant="20" id="aCX-xC-yuD"/>
+                                <constraint firstAttribute="height" constant="1500" id="cmt-b2-vhb"/>
+                                <constraint firstItem="Blg-vo-a0X" firstAttribute="trailing" secondItem="uhY-pX-b48" secondAttribute="trailing" id="esC-Ry-Sql"/>
+                                <constraint firstItem="xGR-Ly-czV" firstAttribute="width" secondItem="xGR-Ly-czV" secondAttribute="height" multiplier="500:281" id="gdN-ge-wSc"/>
+                                <constraint firstItem="gjb-bZ-52p" firstAttribute="top" secondItem="4Cb-Q1-1gm" secondAttribute="top" constant="20" id="jbC-HH-nI2"/>
+                                <constraint firstItem="xGR-Ly-czV" firstAttribute="trailing" secondItem="8AY-ub-O3m" secondAttribute="trailing" id="kVR-rs-90p"/>
+                                <constraint firstItem="Blg-vo-a0X" firstAttribute="leading" secondItem="uhY-pX-b48" secondAttribute="leading" id="ko3-dm-tMn"/>
+                                <constraint firstItem="Blg-vo-a0X" firstAttribute="top" secondItem="tX4-DO-DEV" secondAttribute="bottom" constant="20" id="qJ9-NA-vXk"/>
+                                <constraint firstItem="uhY-pX-b48" firstAttribute="trailing" secondItem="xGR-Ly-czV" secondAttribute="trailing" id="x0W-ye-7NS"/>
+                                <constraint firstItem="tX4-DO-DEV" firstAttribute="leading" secondItem="4Cb-Q1-1gm" secondAttribute="leading" constant="20" id="xy7-14-pJr"/>
+                                <constraint firstItem="uhY-pX-b48" firstAttribute="top" secondItem="d57-T1-fyn" secondAttribute="bottom" constant="20" id="ya7-Zh-Kjh"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="4Cb-Q1-1gm" firstAttribute="leading" secondItem="zK9-fH-3gj" secondAttribute="leading" id="2Zv-pg-nle"/>
+                        <constraint firstItem="4Cb-Q1-1gm" firstAttribute="top" secondItem="zK9-fH-3gj" secondAttribute="top" id="34D-OH-alP"/>
+                        <constraint firstAttribute="bottom" secondItem="4Cb-Q1-1gm" secondAttribute="bottom" id="wVa-68-cT6"/>
+                        <constraint firstAttribute="trailing" secondItem="4Cb-Q1-1gm" secondAttribute="trailing" id="z6A-FQ-P9h"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="KhT-Vh-igb"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="zK9-fH-3gj" secondAttribute="trailing" id="Jzx-qQ-ToB"/>
+                <constraint firstItem="zK9-fH-3gj" firstAttribute="leading" secondItem="KhT-Vh-igb" secondAttribute="leading" id="Lug-Xt-cG8"/>
+                <constraint firstItem="zK9-fH-3gj" firstAttribute="top" secondItem="KhT-Vh-igb" secondAttribute="top" id="biU-O3-NGN"/>
+                <constraint firstItem="4Cb-Q1-1gm" firstAttribute="width" secondItem="J15-XM-FfM" secondAttribute="width" id="jeY-HZ-xEu"/>
+                <constraint firstItem="4Cb-Q1-1gm" firstAttribute="height" secondItem="J15-XM-FfM" secondAttribute="height" priority="750" id="kDr-jX-bvG"/>
+                <constraint firstAttribute="bottom" secondItem="zK9-fH-3gj" secondAttribute="bottom" id="tMy-9X-Bk1"/>
+            </constraints>
+            <point key="canvasLocation" x="86.956521739130437" y="42.857142857142854"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="capeStep1" width="500" height="281"/>
+        <image name="capeStep2" width="500" height="281"/>
+        <image name="capeStep3" width="500" height="281"/>
+        <image name="capeStep4" width="500" height="281"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

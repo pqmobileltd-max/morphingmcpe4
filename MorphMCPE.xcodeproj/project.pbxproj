@@ -1,0 +1,745 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8A80548D3CA98B568BB92B70 /* Pods_MorphMCPE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28BF825B9A21F228211D10C1 /* Pods_MorphMCPE.framework */; };
+		E70CFACD2E2FA6430035358E /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E70CFACC2E2FA6430035358E /* HomeCell.xib */; };
+		E70CFACE2E2FA6430035358E /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70CFACB2E2FA6430035358E /* HomeCell.swift */; };
+		E71550C82B43A41500BC01C9 /* StoreVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71550C62B43A41400BC01C9 /* StoreVC2.swift */; };
+		E71550C92B43A41500BC01C9 /* StoreVC2.xib in Resources */ = {isa = PBXBuildFile; fileRef = E71550C72B43A41500BC01C9 /* StoreVC2.xib */; };
+		E71550CB2B44E8CF00BC01C9 /* MorphModViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71550CA2B44E8CE00BC01C9 /* MorphModViewModel.swift */; };
+		E7773A2E2F8D1B59007D8960 /* morph_free.mcaddon in Resources */ = {isa = PBXBuildFile; fileRef = E7773A2B2F8D1B59007D8960 /* morph_free.mcaddon */; };
+		E7773A2F2F8D1B59007D8960 /* morph_vip.mcaddon in Resources */ = {isa = PBXBuildFile; fileRef = E7773A2C2F8D1B59007D8960 /* morph_vip.mcaddon */; };
+		E78B9BA228F9502700732CA2 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78B9BA128F9502700732CA2 /* AlertController.swift */; };
+		E78CE86728471EF000A3E7D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78CE86628471EF000A3E7D4 /* AppDelegate.swift */; };
+		E78CE86E28471EF000A3E7D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E78CE86C28471EF000A3E7D4 /* Main.storyboard */; };
+		E78CE87028471EF100A3E7D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E78CE86F28471EF100A3E7D4 /* Assets.xcassets */; };
+		E78CE87328471EF100A3E7D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E78CE87128471EF100A3E7D4 /* LaunchScreen.storyboard */; };
+		E78CE87E285095F000A3E7D4 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78CE87D285095F000A3E7D4 /* TabBarController.swift */; };
+		E78CE8832850961300A3E7D4 /* SkinsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78CE8812850961300A3E7D4 /* SkinsVC.swift */; };
+		E78CE8842850961300A3E7D4 /* SkinsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E78CE8822850961300A3E7D4 /* SkinsVC.xib */; };
+		E78CE88828509E7E00A3E7D4 /* 3D in Resources */ = {isa = PBXBuildFile; fileRef = E78CE88728509E7D00A3E7D4 /* 3D */; };
+		E78CE89C2850A3D300A3E7D4 /* SkinCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78CE89A2850A3D300A3E7D4 /* SkinCell.swift */; };
+		E78CE89D2850A3D300A3E7D4 /* SkinCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E78CE89B2850A3D300A3E7D4 /* SkinCell.xib */; };
+		E78CE8A12850CC4900A3E7D4 /* Skin.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78CE8A02850CC4900A3E7D4 /* Skin.swift */; };
+		E78CE8A42850CC5800A3E7D4 /* WebUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78CE8A32850CC5800A3E7D4 /* WebUtility.swift */; };
+		E78CE8A82851AF9500A3E7D4 /* CapesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78CE8A62851AF9500A3E7D4 /* CapesVC.swift */; };
+		E78CE8A92851AF9500A3E7D4 /* CapesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E78CE8A72851AF9500A3E7D4 /* CapesVC.xib */; };
+		E78CE8AD2851AFA600A3E7D4 /* MorphVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78CE8AB2851AFA600A3E7D4 /* MorphVC.swift */; };
+		E78CE8AE2851AFA600A3E7D4 /* MorphVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E78CE8AC2851AFA600A3E7D4 /* MorphVC.xib */; };
+		E78CE8B22851AFB700A3E7D4 /* ElytraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78CE8B02851AFB700A3E7D4 /* ElytraVC.swift */; };
+		E78CE8B32851AFB700A3E7D4 /* ElytraVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E78CE8B12851AFB700A3E7D4 /* ElytraVC.xib */; };
+		E78CE8B72851AFC900A3E7D4 /* MoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78CE8B52851AFC900A3E7D4 /* MoreVC.swift */; };
+		E78CE8B82851AFC900A3E7D4 /* MoreVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E78CE8B62851AFC900A3E7D4 /* MoreVC.xib */; };
+		E78CE8BC2851F9E700A3E7D4 /* FileHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78CE8BB2851F9E700A3E7D4 /* FileHelper.swift */; };
+		E78CE91D2852219400A3E7D4 /* cape in Resources */ = {isa = PBXBuildFile; fileRef = E78CE91C2852219400A3E7D4 /* cape */; };
+		E78CE92128534C2E00A3E7D4 /* morphMod.gif in Resources */ = {isa = PBXBuildFile; fileRef = E78CE92028534C2E00A3E7D4 /* morphMod.gif */; };
+		E78CE92E2854336F00A3E7D4 /* free-mods.gif in Resources */ = {isa = PBXBuildFile; fileRef = E78CE92C2854336E00A3E7D4 /* free-mods.gif */; };
+		E78CE9372854439500A3E7D4 /* premium-mods.gif in Resources */ = {isa = PBXBuildFile; fileRef = E78CE9362854439500A3E7D4 /* premium-mods.gif */; };
+		E78CE93B2854893B00A3E7D4 /* MorphModTutorialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78CE9392854893B00A3E7D4 /* MorphModTutorialVC.swift */; };
+		E78CE93C2854893B00A3E7D4 /* MorphModTutorialVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E78CE93A2854893B00A3E7D4 /* MorphModTutorialVC.xib */; };
+		E78CE94B28559ECE00A3E7D4 /* MoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78CE94928559ECE00A3E7D4 /* MoreTableViewCell.swift */; };
+		E78CE94C28559ECE00A3E7D4 /* MoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E78CE94A28559ECE00A3E7D4 /* MoreTableViewCell.xib */; };
+		E78CE94F2855A08A00A3E7D4 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E78CE94E2855A08900A3E7D4 /* StoreKit.framework */; };
+		E78CE9532855A90E00A3E7D4 /* HowToUseSkinVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78CE9512855A90E00A3E7D4 /* HowToUseSkinVC.swift */; };
+		E78CE9542855A90E00A3E7D4 /* HowToUseSkinVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E78CE9522855A90E00A3E7D4 /* HowToUseSkinVC.xib */; };
+		E78CE9582855DF5600A3E7D4 /* HowToUseCapeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78CE9562855DF5600A3E7D4 /* HowToUseCapeVC.swift */; };
+		E78CE9592855DF5600A3E7D4 /* HowToUseCapeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E78CE9572855DF5600A3E7D4 /* HowToUseCapeVC.xib */; };
+		E78CE95D2855E46A00A3E7D4 /* HowToUseElytra.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78CE95B2855E46900A3E7D4 /* HowToUseElytra.swift */; };
+		E78CE95E2855E46A00A3E7D4 /* HowToUseElytra.xib in Resources */ = {isa = PBXBuildFile; fileRef = E78CE95C2855E46900A3E7D4 /* HowToUseElytra.xib */; };
+		E78CE9622855E87400A3E7D4 /* WebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78CE9602855E87400A3E7D4 /* WebVC.swift */; };
+		E78CE9632855E87400A3E7D4 /* WebVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E78CE9612855E87400A3E7D4 /* WebVC.xib */; };
+		E78CE9672855EC2500A3E7D4 /* StoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78CE9652855EC2500A3E7D4 /* StoreVC.swift */; };
+		E78CE9682855EC2500A3E7D4 /* StoreVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E78CE9662855EC2500A3E7D4 /* StoreVC.xib */; };
+		E78CE9772856BDFE00A3E7D4 /* StoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78CE9762856BDFE00A3E7D4 /* StoreViewModel.swift */; };
+		E78CE98D2856F0B900A3E7D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78CE98C2856F0B900A3E7D4 /* ViewController.swift */; };
+		E78CE9912856F42700A3E7D4 /* MorphDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78CE98F2856F42700A3E7D4 /* MorphDetailVC.swift */; };
+		E78CE9922856F42700A3E7D4 /* MorphDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E78CE9902856F42700A3E7D4 /* MorphDetailVC.xib */; };
+		E7905EF62E3058C700BE1278 /* MoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7905EF42E3058C700BE1278 /* MoreCell.swift */; };
+		E7905EF72E3058C700BE1278 /* MoreCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7905EF52E3058C700BE1278 /* MoreCell.xib */; };
+		E7984E8D2E2F1DFD00661C4D /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7984E8C2E2F1DFD00661C4D /* HomeVC.swift */; };
+		E7984E932E2F2B3700661C4D /* Addon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7984E922E2F2B3600661C4D /* Addon.swift */; };
+		E7984E962E2F2E8100661C4D /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = E7984E952E2F2E8100661C4D /* FirebaseAppCheck */; };
+		E7984E982E2F2E8100661C4D /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = E7984E972E2F2E8100661C4D /* FirebaseFunctions */; };
+		E7984E9B2E2F319200661C4D /* AddonsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7984E9A2E2F319200661C4D /* AddonsVC.xib */; };
+		E7984E9C2E2F319200661C4D /* AddonsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7984E992E2F319200661C4D /* AddonsVC.swift */; };
+		E7984E9F2E2F32E300661C4D /* AddonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7984E9E2E2F32E300661C4D /* AddonCell.xib */; };
+		E7984EA02E2F32E300661C4D /* AddonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7984E9D2E2F32E300661C4D /* AddonCell.swift */; };
+		E7984EA42E2F36A700661C4D /* AddonDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7984EA32E2F36A700661C4D /* AddonDetailVC.xib */; };
+		E7984EA52E2F36A700661C4D /* AddonDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7984EA22E2F36A700661C4D /* AddonDetailVC.swift */; };
+		E7984EA72E2F4CC000661C4D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E7984EA62E2F4CC000661C4D /* GoogleService-Info.plist */; };
+		E7EBC23B2B909902007F8BE5 /* NativeAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7EBC23A2B909902007F8BE5 /* NativeAdView.xib */; };
+		E7EEA3FA2C08C993006CD5A7 /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EEA3F92C08C993006CD5A7 /* AppViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1C08F76EB40A4E13C46CC8A1 /* Pods-MorphMCPE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MorphMCPE.debug.xcconfig"; path = "Target Support Files/Pods-MorphMCPE/Pods-MorphMCPE.debug.xcconfig"; sourceTree = "<group>"; };
+		28BF825B9A21F228211D10C1 /* Pods_MorphMCPE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MorphMCPE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E03372C92B7C9B72B592E0D /* Pods-MorphMCPE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MorphMCPE.release.xcconfig"; path = "Target Support Files/Pods-MorphMCPE/Pods-MorphMCPE.release.xcconfig"; sourceTree = "<group>"; };
+		E70CFACB2E2FA6430035358E /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		E70CFACC2E2FA6430035358E /* HomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
+		E71550C62B43A41400BC01C9 /* StoreVC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreVC2.swift; sourceTree = "<group>"; };
+		E71550C72B43A41500BC01C9 /* StoreVC2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreVC2.xib; sourceTree = "<group>"; };
+		E71550CA2B44E8CE00BC01C9 /* MorphModViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorphModViewModel.swift; sourceTree = "<group>"; };
+		E7773A2B2F8D1B59007D8960 /* morph_free.mcaddon */ = {isa = PBXFileReference; lastKnownFileType = file; path = morph_free.mcaddon; sourceTree = "<group>"; };
+		E7773A2C2F8D1B59007D8960 /* morph_vip.mcaddon */ = {isa = PBXFileReference; lastKnownFileType = file; path = morph_vip.mcaddon; sourceTree = "<group>"; };
+		E78B9BA128F9502700732CA2 /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
+		E78CE86328471EF000A3E7D4 /* MorphMCPE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MorphMCPE.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E78CE86628471EF000A3E7D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E78CE86D28471EF000A3E7D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E78CE86F28471EF100A3E7D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E78CE87228471EF100A3E7D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E78CE87428471EF100A3E7D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E78CE87D285095F000A3E7D4 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		E78CE8812850961300A3E7D4 /* SkinsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkinsVC.swift; sourceTree = "<group>"; };
+		E78CE8822850961300A3E7D4 /* SkinsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SkinsVC.xib; sourceTree = "<group>"; };
+		E78CE88728509E7D00A3E7D4 /* 3D */ = {isa = PBXFileReference; lastKnownFileType = folder; path = 3D; sourceTree = "<group>"; };
+		E78CE89A2850A3D300A3E7D4 /* SkinCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkinCell.swift; sourceTree = "<group>"; };
+		E78CE89B2850A3D300A3E7D4 /* SkinCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SkinCell.xib; sourceTree = "<group>"; };
+		E78CE8A02850CC4900A3E7D4 /* Skin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Skin.swift; sourceTree = "<group>"; };
+		E78CE8A32850CC5800A3E7D4 /* WebUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebUtility.swift; sourceTree = "<group>"; };
+		E78CE8A62851AF9500A3E7D4 /* CapesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapesVC.swift; sourceTree = "<group>"; };
+		E78CE8A72851AF9500A3E7D4 /* CapesVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CapesVC.xib; sourceTree = "<group>"; };
+		E78CE8AB2851AFA600A3E7D4 /* MorphVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorphVC.swift; sourceTree = "<group>"; };
+		E78CE8AC2851AFA600A3E7D4 /* MorphVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MorphVC.xib; sourceTree = "<group>"; };
+		E78CE8B02851AFB700A3E7D4 /* ElytraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElytraVC.swift; sourceTree = "<group>"; };
+		E78CE8B12851AFB700A3E7D4 /* ElytraVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ElytraVC.xib; sourceTree = "<group>"; };
+		E78CE8B52851AFC900A3E7D4 /* MoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreVC.swift; sourceTree = "<group>"; };
+		E78CE8B62851AFC900A3E7D4 /* MoreVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoreVC.xib; sourceTree = "<group>"; };
+		E78CE8BB2851F9E700A3E7D4 /* FileHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileHelper.swift; sourceTree = "<group>"; };
+		E78CE91C2852219400A3E7D4 /* cape */ = {isa = PBXFileReference; lastKnownFileType = folder; path = cape; sourceTree = "<group>"; };
+		E78CE92028534C2E00A3E7D4 /* morphMod.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = morphMod.gif; sourceTree = "<group>"; };
+		E78CE92C2854336E00A3E7D4 /* free-mods.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "free-mods.gif"; sourceTree = "<group>"; };
+		E78CE9362854439500A3E7D4 /* premium-mods.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "premium-mods.gif"; sourceTree = "<group>"; };
+		E78CE9392854893B00A3E7D4 /* MorphModTutorialVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorphModTutorialVC.swift; sourceTree = "<group>"; };
+		E78CE93A2854893B00A3E7D4 /* MorphModTutorialVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MorphModTutorialVC.xib; sourceTree = "<group>"; };
+		E78CE94928559ECE00A3E7D4 /* MoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreTableViewCell.swift; sourceTree = "<group>"; };
+		E78CE94A28559ECE00A3E7D4 /* MoreTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoreTableViewCell.xib; sourceTree = "<group>"; };
+		E78CE94E2855A08900A3E7D4 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		E78CE9512855A90E00A3E7D4 /* HowToUseSkinVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToUseSkinVC.swift; sourceTree = "<group>"; };
+		E78CE9522855A90E00A3E7D4 /* HowToUseSkinVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HowToUseSkinVC.xib; sourceTree = "<group>"; };
+		E78CE9562855DF5600A3E7D4 /* HowToUseCapeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToUseCapeVC.swift; sourceTree = "<group>"; };
+		E78CE9572855DF5600A3E7D4 /* HowToUseCapeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HowToUseCapeVC.xib; sourceTree = "<group>"; };
+		E78CE95B2855E46900A3E7D4 /* HowToUseElytra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToUseElytra.swift; sourceTree = "<group>"; };
+		E78CE95C2855E46900A3E7D4 /* HowToUseElytra.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HowToUseElytra.xib; sourceTree = "<group>"; };
+		E78CE9602855E87400A3E7D4 /* WebVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebVC.swift; sourceTree = "<group>"; };
+		E78CE9612855E87400A3E7D4 /* WebVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebVC.xib; sourceTree = "<group>"; };
+		E78CE9652855EC2500A3E7D4 /* StoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreVC.swift; sourceTree = "<group>"; };
+		E78CE9662855EC2500A3E7D4 /* StoreVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreVC.xib; sourceTree = "<group>"; };
+		E78CE9762856BDFE00A3E7D4 /* StoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewModel.swift; sourceTree = "<group>"; };
+		E78CE98C2856F0B900A3E7D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E78CE98F2856F42700A3E7D4 /* MorphDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorphDetailVC.swift; sourceTree = "<group>"; };
+		E78CE9902856F42700A3E7D4 /* MorphDetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MorphDetailVC.xib; sourceTree = "<group>"; };
+		E7905EF42E3058C700BE1278 /* MoreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreCell.swift; sourceTree = "<group>"; };
+		E7905EF52E3058C700BE1278 /* MoreCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoreCell.xib; sourceTree = "<group>"; };
+		E7984E8C2E2F1DFD00661C4D /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		E7984E922E2F2B3600661C4D /* Addon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Addon.swift; sourceTree = "<group>"; };
+		E7984E992E2F319200661C4D /* AddonsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddonsVC.swift; sourceTree = "<group>"; };
+		E7984E9A2E2F319200661C4D /* AddonsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddonsVC.xib; sourceTree = "<group>"; };
+		E7984E9D2E2F32E300661C4D /* AddonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddonCell.swift; sourceTree = "<group>"; };
+		E7984E9E2E2F32E300661C4D /* AddonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddonCell.xib; sourceTree = "<group>"; };
+		E7984EA22E2F36A700661C4D /* AddonDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddonDetailVC.swift; sourceTree = "<group>"; };
+		E7984EA32E2F36A700661C4D /* AddonDetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddonDetailVC.xib; sourceTree = "<group>"; };
+		E7984EA62E2F4CC000661C4D /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E7EBC23A2B909902007F8BE5 /* NativeAdView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NativeAdView.xib; sourceTree = "<group>"; };
+		E7EEA3F92C08C993006CD5A7 /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
+		EA3415D52F9E3F6E00AC9B6D /* MorphMCPE.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MorphMCPE.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E78CE86028471EF000A3E7D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A80548D3CA98B568BB92B70 /* Pods_MorphMCPE.framework in Frameworks */,
+				E7984E962E2F2E8100661C4D /* FirebaseAppCheck in Frameworks */,
+				E78CE94F2855A08A00A3E7D4 /* StoreKit.framework in Frameworks */,
+				E7984E982E2F2E8100661C4D /* FirebaseFunctions in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4A419C377CA93757D5BD5D9E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E78CE94E2855A08900A3E7D4 /* StoreKit.framework */,
+				28BF825B9A21F228211D10C1 /* Pods_MorphMCPE.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B1080341BA2B9C1DD51D20A3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1C08F76EB40A4E13C46CC8A1 /* Pods-MorphMCPE.debug.xcconfig */,
+				3E03372C92B7C9B72B592E0D /* Pods-MorphMCPE.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E7773A2D2F8D1B59007D8960 /* morph */ = {
+			isa = PBXGroup;
+			children = (
+				E7773A2B2F8D1B59007D8960 /* morph_free.mcaddon */,
+				E7773A2C2F8D1B59007D8960 /* morph_vip.mcaddon */,
+			);
+			path = morph;
+			sourceTree = "<group>";
+		};
+		E78CE85A28471EF000A3E7D4 = {
+			isa = PBXGroup;
+			children = (
+				E78CE86528471EF000A3E7D4 /* MorphMCPE */,
+				E78CE86428471EF000A3E7D4 /* Products */,
+				B1080341BA2B9C1DD51D20A3 /* Pods */,
+				4A419C377CA93757D5BD5D9E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E78CE86428471EF000A3E7D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E78CE86328471EF000A3E7D4 /* MorphMCPE.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E78CE86528471EF000A3E7D4 /* MorphMCPE */ = {
+			isa = PBXGroup;
+			children = (
+				EA3415D52F9E3F6E00AC9B6D /* MorphMCPE.entitlements */,
+				E78CE99428576BAB00A3E7D4 /* MorphModPack */,
+				E78CE91C2852219400A3E7D4 /* cape */,
+				E78CE8BA2851F9B000A3E7D4 /* FileHelper */,
+				E78CE89F2850CC4900A3E7D4 /* Model */,
+				E78CE8992850A3D300A3E7D4 /* View */,
+				E78CE88728509E7D00A3E7D4 /* 3D */,
+				E78CE880285095FB00A3E7D4 /* VC */,
+				E78CE86628471EF000A3E7D4 /* AppDelegate.swift */,
+				E7773A2D2F8D1B59007D8960 /* morph */,
+				E78CE87D285095F000A3E7D4 /* TabBarController.swift */,
+				E78CE86C28471EF000A3E7D4 /* Main.storyboard */,
+				E7984EA62E2F4CC000661C4D /* GoogleService-Info.plist */,
+				E78CE86F28471EF100A3E7D4 /* Assets.xcassets */,
+				E78CE87128471EF100A3E7D4 /* LaunchScreen.storyboard */,
+				E78CE87428471EF100A3E7D4 /* Info.plist */,
+			);
+			path = MorphMCPE;
+			sourceTree = "<group>";
+		};
+		E78CE880285095FB00A3E7D4 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				E78CE8812850961300A3E7D4 /* SkinsVC.swift */,
+				E78CE8822850961300A3E7D4 /* SkinsVC.xib */,
+				E78CE8A62851AF9500A3E7D4 /* CapesVC.swift */,
+				E78CE8A72851AF9500A3E7D4 /* CapesVC.xib */,
+				E78CE8AB2851AFA600A3E7D4 /* MorphVC.swift */,
+				E78CE8AC2851AFA600A3E7D4 /* MorphVC.xib */,
+				E78CE8B02851AFB700A3E7D4 /* ElytraVC.swift */,
+				E78CE8B12851AFB700A3E7D4 /* ElytraVC.xib */,
+				E78CE8B52851AFC900A3E7D4 /* MoreVC.swift */,
+				E78CE8B62851AFC900A3E7D4 /* MoreVC.xib */,
+				E78CE95B2855E46900A3E7D4 /* HowToUseElytra.swift */,
+				E78CE95C2855E46900A3E7D4 /* HowToUseElytra.xib */,
+				E78CE9392854893B00A3E7D4 /* MorphModTutorialVC.swift */,
+				E78CE93A2854893B00A3E7D4 /* MorphModTutorialVC.xib */,
+				E78CE9512855A90E00A3E7D4 /* HowToUseSkinVC.swift */,
+				E78CE9522855A90E00A3E7D4 /* HowToUseSkinVC.xib */,
+				E78CE9562855DF5600A3E7D4 /* HowToUseCapeVC.swift */,
+				E78CE9572855DF5600A3E7D4 /* HowToUseCapeVC.xib */,
+				E78CE9602855E87400A3E7D4 /* WebVC.swift */,
+				E78CE9612855E87400A3E7D4 /* WebVC.xib */,
+				E78CE9652855EC2500A3E7D4 /* StoreVC.swift */,
+				E78CE9662855EC2500A3E7D4 /* StoreVC.xib */,
+				E78CE98C2856F0B900A3E7D4 /* ViewController.swift */,
+				E78CE98F2856F42700A3E7D4 /* MorphDetailVC.swift */,
+				E78CE9902856F42700A3E7D4 /* MorphDetailVC.xib */,
+				E78B9BA128F9502700732CA2 /* AlertController.swift */,
+				E71550C62B43A41400BC01C9 /* StoreVC2.swift */,
+				E71550C72B43A41500BC01C9 /* StoreVC2.xib */,
+				E7984E8C2E2F1DFD00661C4D /* HomeVC.swift */,
+				E7984EA22E2F36A700661C4D /* AddonDetailVC.swift */,
+				E7984EA32E2F36A700661C4D /* AddonDetailVC.xib */,
+				E7984E992E2F319200661C4D /* AddonsVC.swift */,
+				E7984E9A2E2F319200661C4D /* AddonsVC.xib */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		E78CE8992850A3D300A3E7D4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E78CE89A2850A3D300A3E7D4 /* SkinCell.swift */,
+				E78CE89B2850A3D300A3E7D4 /* SkinCell.xib */,
+				E78CE94928559ECE00A3E7D4 /* MoreTableViewCell.swift */,
+				E78CE94A28559ECE00A3E7D4 /* MoreTableViewCell.xib */,
+				E7EBC23A2B909902007F8BE5 /* NativeAdView.xib */,
+				E7984E9D2E2F32E300661C4D /* AddonCell.swift */,
+				E7984E9E2E2F32E300661C4D /* AddonCell.xib */,
+				E70CFACB2E2FA6430035358E /* HomeCell.swift */,
+				E70CFACC2E2FA6430035358E /* HomeCell.xib */,
+				E7905EF42E3058C700BE1278 /* MoreCell.swift */,
+				E7905EF52E3058C700BE1278 /* MoreCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E78CE89F2850CC4900A3E7D4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E78CE8A02850CC4900A3E7D4 /* Skin.swift */,
+				E78CE8A32850CC5800A3E7D4 /* WebUtility.swift */,
+				E78CE9762856BDFE00A3E7D4 /* StoreViewModel.swift */,
+				E71550CA2B44E8CE00BC01C9 /* MorphModViewModel.swift */,
+				E7EEA3F92C08C993006CD5A7 /* AppViewModel.swift */,
+				E7984E922E2F2B3600661C4D /* Addon.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E78CE8BA2851F9B000A3E7D4 /* FileHelper */ = {
+			isa = PBXGroup;
+			children = (
+				E78CE8BB2851F9E700A3E7D4 /* FileHelper.swift */,
+			);
+			path = FileHelper;
+			sourceTree = "<group>";
+		};
+		E78CE99428576BAB00A3E7D4 /* MorphModPack */ = {
+			isa = PBXGroup;
+			children = (
+				E78CE92028534C2E00A3E7D4 /* morphMod.gif */,
+				E78CE9362854439500A3E7D4 /* premium-mods.gif */,
+				E78CE92C2854336E00A3E7D4 /* free-mods.gif */,
+			);
+			path = MorphModPack;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E78CE86228471EF000A3E7D4 /* MorphMCPE */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E78CE87728471EF100A3E7D4 /* Build configuration list for PBXNativeTarget "MorphMCPE" */;
+			buildPhases = (
+				DD23B87A3C0329F22E58D88A /* [CP] Check Pods Manifest.lock */,
+				E78CE85F28471EF000A3E7D4 /* Sources */,
+				E78CE86028471EF000A3E7D4 /* Frameworks */,
+				E78CE86128471EF000A3E7D4 /* Resources */,
+				A2A3EECCEF362033F7D7F1AB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MorphMCPE;
+			productName = MorphMCPE;
+			productReference = E78CE86328471EF000A3E7D4 /* MorphMCPE.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E78CE85B28471EF000A3E7D4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					E78CE86228471EF000A3E7D4 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = E78CE85E28471EF000A3E7D4 /* Build configuration list for PBXProject "MorphMCPE" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E78CE85A28471EF000A3E7D4;
+			packageReferences = (
+				E7984E942E2F2E8100661C4D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = E78CE86428471EF000A3E7D4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E78CE86228471EF000A3E7D4 /* MorphMCPE */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E78CE86128471EF000A3E7D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E78CE9682855EC2500A3E7D4 /* StoreVC.xib in Resources */,
+				E78CE88828509E7E00A3E7D4 /* 3D in Resources */,
+				E70CFACD2E2FA6430035358E /* HomeCell.xib in Resources */,
+				E78CE9632855E87400A3E7D4 /* WebVC.xib in Resources */,
+				E78CE8A92851AF9500A3E7D4 /* CapesVC.xib in Resources */,
+				E78CE9922856F42700A3E7D4 /* MorphDetailVC.xib in Resources */,
+				E78CE93C2854893B00A3E7D4 /* MorphModTutorialVC.xib in Resources */,
+				E78CE87328471EF100A3E7D4 /* LaunchScreen.storyboard in Resources */,
+				E71550C92B43A41500BC01C9 /* StoreVC2.xib in Resources */,
+				E78CE91D2852219400A3E7D4 /* cape in Resources */,
+				E78CE8AE2851AFA600A3E7D4 /* MorphVC.xib in Resources */,
+				E78CE9372854439500A3E7D4 /* premium-mods.gif in Resources */,
+				E78CE89D2850A3D300A3E7D4 /* SkinCell.xib in Resources */,
+				E78CE8B82851AFC900A3E7D4 /* MoreVC.xib in Resources */,
+				E7984E9B2E2F319200661C4D /* AddonsVC.xib in Resources */,
+				E78CE8B32851AFB700A3E7D4 /* ElytraVC.xib in Resources */,
+				E7905EF72E3058C700BE1278 /* MoreCell.xib in Resources */,
+				E78CE8842850961300A3E7D4 /* SkinsVC.xib in Resources */,
+				E78CE9542855A90E00A3E7D4 /* HowToUseSkinVC.xib in Resources */,
+				E7EBC23B2B909902007F8BE5 /* NativeAdView.xib in Resources */,
+				E78CE95E2855E46A00A3E7D4 /* HowToUseElytra.xib in Resources */,
+				E78CE87028471EF100A3E7D4 /* Assets.xcassets in Resources */,
+				E7984E9F2E2F32E300661C4D /* AddonCell.xib in Resources */,
+				E7773A2E2F8D1B59007D8960 /* morph_free.mcaddon in Resources */,
+				E7773A2F2F8D1B59007D8960 /* morph_vip.mcaddon in Resources */,
+				E78CE94C28559ECE00A3E7D4 /* MoreTableViewCell.xib in Resources */,
+				E78CE92128534C2E00A3E7D4 /* morphMod.gif in Resources */,
+				E7984EA72E2F4CC000661C4D /* GoogleService-Info.plist in Resources */,
+				E7984EA42E2F36A700661C4D /* AddonDetailVC.xib in Resources */,
+				E78CE92E2854336F00A3E7D4 /* free-mods.gif in Resources */,
+				E78CE86E28471EF000A3E7D4 /* Main.storyboard in Resources */,
+				E78CE9592855DF5600A3E7D4 /* HowToUseCapeVC.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A2A3EECCEF362033F7D7F1AB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MorphMCPE/Pods-MorphMCPE-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MorphMCPE/Pods-MorphMCPE-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MorphMCPE/Pods-MorphMCPE-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD23B87A3C0329F22E58D88A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MorphMCPE-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E78CE85F28471EF000A3E7D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7EEA3FA2C08C993006CD5A7 /* AppViewModel.swift in Sources */,
+				E7984EA52E2F36A700661C4D /* AddonDetailVC.swift in Sources */,
+				E78CE9672855EC2500A3E7D4 /* StoreVC.swift in Sources */,
+				E78CE8A82851AF9500A3E7D4 /* CapesVC.swift in Sources */,
+				E78CE9532855A90E00A3E7D4 /* HowToUseSkinVC.swift in Sources */,
+				E78CE9622855E87400A3E7D4 /* WebVC.swift in Sources */,
+				E7984EA02E2F32E300661C4D /* AddonCell.swift in Sources */,
+				E78CE86728471EF000A3E7D4 /* AppDelegate.swift in Sources */,
+				E78CE9772856BDFE00A3E7D4 /* StoreViewModel.swift in Sources */,
+				E78CE9912856F42700A3E7D4 /* MorphDetailVC.swift in Sources */,
+				E78CE8B22851AFB700A3E7D4 /* ElytraVC.swift in Sources */,
+				E78B9BA228F9502700732CA2 /* AlertController.swift in Sources */,
+				E78CE8832850961300A3E7D4 /* SkinsVC.swift in Sources */,
+				E7984E932E2F2B3700661C4D /* Addon.swift in Sources */,
+				E7984E9C2E2F319200661C4D /* AddonsVC.swift in Sources */,
+				E78CE8BC2851F9E700A3E7D4 /* FileHelper.swift in Sources */,
+				E70CFACE2E2FA6430035358E /* HomeCell.swift in Sources */,
+				E78CE9582855DF5600A3E7D4 /* HowToUseCapeVC.swift in Sources */,
+				E71550CB2B44E8CF00BC01C9 /* MorphModViewModel.swift in Sources */,
+				E78CE98D2856F0B900A3E7D4 /* ViewController.swift in Sources */,
+				E78CE94B28559ECE00A3E7D4 /* MoreTableViewCell.swift in Sources */,
+				E71550C82B43A41500BC01C9 /* StoreVC2.swift in Sources */,
+				E7984E8D2E2F1DFD00661C4D /* HomeVC.swift in Sources */,
+				E78CE89C2850A3D300A3E7D4 /* SkinCell.swift in Sources */,
+				E78CE93B2854893B00A3E7D4 /* MorphModTutorialVC.swift in Sources */,
+				E78CE87E285095F000A3E7D4 /* TabBarController.swift in Sources */,
+				E78CE8A42850CC5800A3E7D4 /* WebUtility.swift in Sources */,
+				E78CE8A12850CC4900A3E7D4 /* Skin.swift in Sources */,
+				E7905EF62E3058C700BE1278 /* MoreCell.swift in Sources */,
+				E78CE8AD2851AFA600A3E7D4 /* MorphVC.swift in Sources */,
+				E78CE95D2855E46A00A3E7D4 /* HowToUseElytra.swift in Sources */,
+				E78CE8B72851AFC900A3E7D4 /* MoreVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E78CE86C28471EF000A3E7D4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E78CE86D28471EF000A3E7D4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E78CE87128471EF100A3E7D4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E78CE87228471EF100A3E7D4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E78CE87528471EF100A3E7D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E78CE87628471EF100A3E7D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E78CE87828471EF100A3E7D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C08F76EB40A4E13C46CC8A1 /* Pods-MorphMCPE.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MorphMCPE/MorphMCPE.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RNUQL3R56W;
+				INFOPLIST_FILE = MorphMCPE/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 4.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jalistudio2020.MorphingMCPE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E78CE87928471EF100A3E7D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E03372C92B7C9B72B592E0D /* Pods-MorphMCPE.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MorphMCPE/MorphMCPE.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RNUQL3R56W;
+				INFOPLIST_FILE = MorphMCPE/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 4.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jalistudio2020.MorphingMCPE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E78CE85E28471EF000A3E7D4 /* Build configuration list for PBXProject "MorphMCPE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E78CE87528471EF100A3E7D4 /* Debug */,
+				E78CE87628471EF100A3E7D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E78CE87728471EF100A3E7D4 /* Build configuration list for PBXNativeTarget "MorphMCPE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E78CE87828471EF100A3E7D4 /* Debug */,
+				E78CE87928471EF100A3E7D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E7984E942E2F2E8100661C4D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E7984E952E2F2E8100661C4D /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E7984E942E2F2E8100661C4D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+		E7984E972E2F2E8100661C4D /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E7984E942E2F2E8100661C4D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E78CE85B28471EF000A3E7D4 /* Project object */;
+}

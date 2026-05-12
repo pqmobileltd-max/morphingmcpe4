@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MoreVC" customModule="MorphMCPE" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="XPa-vt-AFi" id="hV2-Wj-kxB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="fRI-Sm-FId">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                </imageView>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mey-u3-fwb">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="hcT-ak-ZLX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DAi-Nb-WO2">
+                                <rect key="frame" x="0.0" y="0.0" width="174" height="734"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="RhN-IG-Jl2">
+                                    <rect key="frame" x="0.0" y="0.0" width="174" height="734"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <vibrancyEffect>
+                                    <blurEffect style="regular"/>
+                                </vibrancyEffect>
+                            </visualEffectView>
+                        </subviews>
+                    </view>
+                    <blurEffect style="dark"/>
+                </visualEffectView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="70" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="XPa-vt-AFi">
+                    <rect key="frame" x="0.0" y="48" width="414" height="814"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fRI-Sm-FId" firstAttribute="bottom" secondItem="XPa-vt-AFi" secondAttribute="bottom" id="EKB-6L-wvF"/>
+                <constraint firstItem="XPa-vt-AFi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="IDK-zR-oQz"/>
+                <constraint firstItem="mey-u3-fwb" firstAttribute="leading" secondItem="fRI-Sm-FId" secondAttribute="leading" id="R76-EZ-IpV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="XPa-vt-AFi" secondAttribute="bottom" id="VzX-rn-H1t"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="XPa-vt-AFi" secondAttribute="trailing" id="bqU-yX-L2L"/>
+                <constraint firstItem="mey-u3-fwb" firstAttribute="bottom" secondItem="fRI-Sm-FId" secondAttribute="bottom" id="e06-6L-2h7"/>
+                <constraint firstItem="mey-u3-fwb" firstAttribute="top" secondItem="fRI-Sm-FId" secondAttribute="top" id="ifd-gz-wrm"/>
+                <constraint firstItem="fRI-Sm-FId" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="oHq-bW-B9h"/>
+                <constraint firstItem="fRI-Sm-FId" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="qo3-Nq-sKk"/>
+                <constraint firstItem="mey-u3-fwb" firstAttribute="trailing" secondItem="fRI-Sm-FId" secondAttribute="trailing" id="vYl-Ie-1vU"/>
+                <constraint firstItem="XPa-vt-AFi" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="wex-jM-gGp"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fRI-Sm-FId" secondAttribute="trailing" id="xEA-mT-Jjq"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="78.348214285714278"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg" width="1080" height="1920"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
